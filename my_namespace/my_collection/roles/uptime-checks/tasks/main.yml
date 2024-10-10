@@ -1,0 +1,11 @@
+---
+# tasks file for uptime-check
+
+- name: Display uptime
+  command: uptime
+  register: result
+  changed_when: false
+
+- name: Print uptime
+  debug:
+    msg: "host {{ inventory_hostname }} status:  {{ result.stdout }}"
