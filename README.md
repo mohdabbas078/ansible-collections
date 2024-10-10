@@ -8,16 +8,17 @@
 
 ### step 1 : create a dir called ansible_collections or with any name
 ``` bash
- command: mkdir  ansible_collections
+mkdir  ansible_collections
 ```
-
-step 2 : Go inside the directory. 
- command: cd  ansible_collections
-
-step 3 : create collections skeleton following by namespace.
-note: we can have single namespace and single collection for all the roles  or we can have single namespace and multiple collection  for each role or we can have multiple namespace and multiple collection for each role. it is based on the busniess need. i this repo it is for single namespace and single collection for all the roles.
- command: ansible-galaxy collection init my_namespace.my_collection
-
+### step 2 : Go inside the directory. 
+``` bash
+cd  ansible_collections
+```
+### step 3 : create collections skeleton following by namespace.
+**Note:** we can have single namespace and single collection for all the roles  or we can have single namespace and multiple collection  for each role or we can have multiple namespace and multiple collection for each role. it is based on the busniess need. i this repo it is for single namespace and single collection for all the roles.
+``` bash
+ansible-galaxy collection init my_namespace.my_collection
+ ```
 
 step 4: fill all the roles to their respective collections and push the changes to the repo.  
 
