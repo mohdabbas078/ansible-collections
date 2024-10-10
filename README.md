@@ -6,9 +6,10 @@
 
 ## Source Repo setup
 
-** step 1 : create a dir called ansible_collections or with any name **
-
+### step 1 : create a dir called ansible_collections or with any name
+``` bash
  command: mkdir  ansible_collections
+```
 
 step 2 : Go inside the directory. 
  command: cd  ansible_collections
